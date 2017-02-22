@@ -3,19 +3,33 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
         <style>
             * {
-                font-family: Arial, sans-serif;
+                font-family: Comic Sans MS, cursive, sans-serif;
             }
+
             h1, h2, p {
                 color: #FFF;
             }
 
-            div {
-                background-color: #000033;
+            h2 {
+                font-size: 45px;
+                font-family: Arial, sans-serif;
+                padding: 50px;
+            }
+
+            p {
+                font-size: 25px;
+                font-style: italic;
+            }
+
+            .jumbotron {
+                background-color: black;
+                background-size: cover;
+                min-height: 500px;
             }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="jumbotron">
             <h1>Got writer's block?</hl>
             <p>Try out this random idea generator</p>
             <form action="/" method="POST" class="form-inline">
@@ -24,7 +38,7 @@
                 </div>
                 <input type="submit" class="btn btn-secondary btn-large" value="Refresh">
             </form>
-            <h2><em><%= @generator %></em></h2>
+            <h2><%= @generator %></h2>
         </div>
     </body>
 </html>
