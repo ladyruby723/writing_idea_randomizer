@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <style>
+            * {
+                font-family: Arial, sans-serif;
+            }
+            h1, h2, p {
+                color: #FFF;
+            }
+
+            div {
+                background-color: #000033;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Got writer's block?</hl>
+            <p>Try out this random idea generator</p>
+            <form action="/" method="POST" class="form-inline">
+                <div class="form-group">
+                    <name="name">
+                </div>
+                <input type="submit" class="btn btn-secondary btn-large" value="Refresh">
+            </form>
+            <h2><em><%= @generator %></em></h2>
+        </div>
+    </body>
+</html>
